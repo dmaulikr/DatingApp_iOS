@@ -1,0 +1,7 @@
+.DS_Store
+build
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+
+# About xcode 7 .gitignore
+# http://stackoverflow.com/questions/31752182/what-should-be-in-my-gitignore-for-xcode-7

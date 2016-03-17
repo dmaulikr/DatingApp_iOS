@@ -1,0 +1,31 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Constants.h"
+#import "AppDelegate.h"
+#import "AppSharedData.h"
+#import "ServiceManager.h"
+#import "ParsingManager.h"
+#import "ChatService.h"
+#import <Quickblox/Quickblox.h>
+#import "Flurry.h"
+
+#define appDelegate (AppDelegate*)[[UIApplication sharedApplication] delegate]
+#define appSharedData [AppSharedData sharedInstance]
+#define serviceManager [ServiceManager sharedManager]
+#define parsingManager [ParsingManager sharedManager]
+
+#endif
